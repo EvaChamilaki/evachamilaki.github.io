@@ -22,6 +22,7 @@ nav {
 
 .nav__links a,
 .cta,
+p,
 .overlay__content a {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
@@ -29,6 +30,9 @@ nav {
   text-decoration: none;
 }
 
+.about_links {
+  color: rgb(115, 204, 242);
+}
 .nav__links {
   list-style: none;
   display: flex;
@@ -185,14 +189,21 @@ body {
   display:flex;
 }
 
-img{
+.img_format {
   width: 100%;
   display: block;
   transition: transform .2s;
   margin:0 auto;
   border-radius: 10px;
 }
-img:hover{
+
+.about_img {
+  float: right;
+  margin: 0px 0px 15px 20px;
+  border-radius: 10px;
+}
+
+.img_format:hover{
     transform:scale(1.1);
 }
 
@@ -200,6 +211,13 @@ img:hover{
   content: "";
   clear: both;
   display: table;
+}
+
+p {
+  padding: 15px; 
+  padding-bottom: 0px;
+  color: white;
+
 }
 
 .footer {
