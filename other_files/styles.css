@@ -288,7 +288,7 @@ p {
 }
 
 .footer {
-  background-color: #24262b;
+  background-color: #24252a;
   padding: 20px 0;
   position: relative;
   bottom: 0;
@@ -343,6 +343,6 @@ p {
 }
 
 .scrollbutton img {
-  width: 60px; /* Set the appropriate width for the arrow */
-  height: 60px; /* Set the appropriate height for the arrow */
+  width: 60px;
+  height: 60px;
 }
