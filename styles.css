@@ -75,9 +75,10 @@ p,
 .header-line,
 .footer-line {
   width: 100%;
-  height: 2px;
+  height: 1px;
   background-color: #1355ef;
   margin: 0 auto;
+  margin-top: 5px;
 }
 
 .header-line {
@@ -216,11 +217,74 @@ body {
   display: table;
 }
 
+.timeline {
+  margin: 90px auto;
+  max-width: 80%;
+  border-left: 2px solid #1355ef;
+  padding: 0 20px 0 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+}
+
+.project-item {
+  background-color: #acacba;
+  padding: 10px 25px;
+  font-size: 16px;
+  border: 1px solid #1355ef;
+  line-height: 1.7;
+  position: relative;
+  height: auto;
+  word-wrap: break-word;
+  border-radius: 20px;
+}
+
+.year {
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  color: #000000;
+  font-weight: normal;
+}
+
+.project-item::before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #24252a;
+  border: 3px solid #ddd;
+  position: absolute;
+  left: -40px; 
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.project-item::after {
+  content: '';
+  border-style: solid;
+  border-color: transparent #ddd transparent transparent;
+  border-width: 8px;
+  position: absolute;
+  left: -17px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.project-item h4 {
+  font-weight: normal;
+}
+
+.project-item small {
+  color: #3a3a3a;
+}
+
 p {
   padding: 15px; 
   padding-bottom: 0px;
   color: white;
-
 }
 
 .footer {
@@ -267,4 +331,18 @@ p {
 .footer-col .social-links a:hover {
   color: #24262b;
   background-color: #ffffff;
+}
+
+.scrollbutton {
+  display: none;
+  position: fixed;
+  bottom: 1%;
+  right: 3%;
+  border: none;
+  cursor: pointer;
+}
+
+.scrollbutton img {
+  width: 60px; /* Set the appropriate width for the arrow */
+  height: 60px; /* Set the appropriate height for the arrow */
 }
