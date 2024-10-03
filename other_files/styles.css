@@ -85,6 +85,14 @@ p,
   margin-bottom: 20px;
 }
 
+.line {
+  align-items: center;
+  width: 70%;
+  height: 1px;
+  background-color: #ffe2b6;
+  margin: 0 auto;
+}
+
 .footer-copyright {
   text-align: center;
   font-size: 12px;
@@ -240,12 +248,33 @@ body {
   border-radius: 20px;
 }
 
+.awards-item {
+  margin: 60px auto;
+  max-width: 60%;
+  padding: 0 20px 0 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+}
+
+.awards-item h3, h4, small {
+  font-weight: normal;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
 .year {
   position: absolute;
   top: 10px;
   right: 25px;
   color: #000000;
   font-weight: normal;
+}
+
+.awards-item .year {
+  color: white;
 }
 
 .project-item::before {
